@@ -1,0 +1,23 @@
+{
+  "name": "smartthingsnodejs",
+  "version": "1.0.1",
+  "description": "smartthings cloud api client",
+  "main": "lib/SmartThings.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifsale/smartthingsnodejs.git"
+  },
+  "author": "groundcreative",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifsale/smartthingsnodejs/issues"
+  },
+  "homepage": "https://github.com/ifsale/smartthingsnodejs#readme"
+}

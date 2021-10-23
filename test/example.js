@@ -1,4 +1,4 @@
-const SmartThings = require( 'smartthings' );
+const SmartThings = require( 'smartthingsnodejs' );
 
 let Cloud = new SmartThings
 ( {
@@ -12,14 +12,14 @@ let Cloud = new SmartThings
 	let result = '';
 	let device_id = 'XXXXXXXXXXXXXXXXXXX';
 	
+	// get list of devices
+	result = await Cloud.devices( ).get_list( );
+	
 	// get device details
 	result = await Cloud.devices( ).get_details( device_id );
-	
+
 	// post device commands ( turn off the tv )
-	let commands = [ {	"command": "off", "capability": "switch","component": "main", "arguments": [] } ];
+	let commands = [ {	"command": "off" , "capability": "switch" ,"component": "main" , "arguments": [ ] } ];
 	result = await Cloud.devices( ).post_commands( device_id , commands );
-	
-	// get list of devices
-	result = await Cloud.devices( token ).get_list( );
 
 } )( );
