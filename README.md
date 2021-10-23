@@ -22,7 +22,7 @@ const TuyaCloud = require( 'tuyacloudnodejs' );
 let Cloud = new SmartThings
 ( {
 	"authToken"	: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" ,
-	"server"		: "https://api.smartthings.com/v1/"
+	"server"	: "https://api.smartthings.com/v1/"
 } );
 ```
 
