@@ -1,6 +1,6 @@
 {
   "name": "smartthingsnodejs",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "smartthings cloud api client",
   "main": "lib/SmartThings.js",
   "directories": {

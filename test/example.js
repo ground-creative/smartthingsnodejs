@@ -1,9 +1,9 @@
-const SmartThings = require( 'smartthingsnodejs' );
+const SmartThings = require( '../lib/SmartThings.js' );
 
 let Cloud = new SmartThings
 ( {
 	"authToken"	: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" ,
-	"server"	: "https://api.smartthings.com/v1/"
+	"server"		: "https://api.smartthings.com/v1/"
 } );
 
 ( async function( )
@@ -17,6 +17,9 @@ let Cloud = new SmartThings
 	
 	// get device details
 	result = await Cloud.devices( ).get_details( device_id );
+	
+	// get installed apps list
+	result = await Cloud.apps( ).get_installed_list( );
 
 	// post device commands ( turn off the tv )
 	let commands = [ { "command": "off" , "capability": "switch" ,"component": "main" , "arguments": [ ] } ];
