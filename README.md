@@ -17,12 +17,12 @@ npm install smartthingsnodejs
 ### Create new instance
 
 ```
-const TuyaCloud = require( 'tuyacloudnodejs' );
+const SmartThings = require( '../lib/SmartThings.js' );
 
 let Cloud = new SmartThings
 ( {
 	"authToken"	: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" ,
-	"server"		: "https://api.smartthings.com/v1/"
+	"server"	: "https://api.smartthings.com/v1/"
 } );
 ```
 
